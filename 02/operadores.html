@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Matemáticos</title>
+</head>
+<body>
+    <h1>Operadores Matemáticos</h1>
+
+    <script>
+        var n1 = 15
+        var n2 = 2
+        var result
+
+        // Pegar os Valores
+
+        // Numero
+        console.log("Numero 1 = " + n1 + " Numero 2 = " + n2)
+
+        // Calculos
+            
+        // Soma
+        result = n1 + n2
+        console.log("Soma é = " + result)
+            
+        // Subtração
+        result = n1 - n2
+        console.log("Subtração é = " + result)
+
+        // Multiplicação
+        result = n1 * n2
+        console.log("Multiplicação é = " + result)
+
+        // Divisão
+        result = n1 / n2
+        console.log("Divisão é = " + result)
+
+        // Potência
+        result = n1 ** n2
+        console.log("Potência é = " + result)
+
+        // Módulo
+        result = n1 % n2
+        console.log("Resto da divisão é = " + result)
+
+        // Increment
+        // console.log("Incremente = " + n1++)
+        // console.log(n1)
+
+        // Decrement
+        // console.log("Decremente = " + n2--)
+        // console.log(n2)
+
+        // (15 + 2) / 2
+        result = (n1 + n2) / n2
+        console.log("Resultado = " + result)
+
+        // Pegar os Valores do usuário
+        var numero1 = prompt("Digite um valor: ")
+        var numero2 = prompt("Digite outro valor: ")
+
+        console.log("Numero 1: " + numero1 + " Numero 2: " + numero2)
+
+        result = Number(numero1) + Number.parseInt(numero2)
+
+        console.log(typeof(Number(numero1)))
+        console.log(Number.parseFloat(numero1)) // Number(var) // parseFloat (var) - parseInt (var)
+        console.log("Soma é = " + result)
+
+        // Convertendo para variável
+        console.log(typeof(result))
+        console.log(typeof(String(result)) + " = " + result)
+        
+        // Tamanho da Variável
+        var texto = "Mateus"
+        console.log("Num caract " + texto.length)
+
+    </script>
+    
+</body>
+</html>
