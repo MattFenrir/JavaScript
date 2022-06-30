@@ -2,10 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS DE CONFIG PADRÃO -->
-    <link rel="stylesheet" href="config/config.css">
+    <!-- CSS DE CONFIG PADRÃO-->
+    <link rel="stylesheet" href="../config/config.css">
     <style>
         /* DECLARANDO VARIAVEIS */
         :root{
@@ -23,42 +21,36 @@
         }
 
         /* HEADER */
-
         header{
             width: 100%;
             height: 50px;
+
             background-color: var(--color2);
             padding: 10px;
         }
-
         header form{
             float: right;
         }
-
         header form input{
             padding: 5px;
             outline: none;
             font-size: 0.9em;
         }
-
         header form input[type=submit]{
             text-transform: uppercase;
             border: none;
             cursor: pointer;
             background-color: var(--color4);
         }
-
         header div{
             display: block;
         }
-
         header div span{
             font-size: 1.2em;
             font-weight: bold;
             color: var(--color6);
             text-shadow: 2px 2px 5px var(--color5);
         }
-
         header div select{
             background-color: var(--color2);
             color: var(--color6);
@@ -66,19 +58,18 @@
             margin: 0 20px;
         }
 
-        /* ATICLES */
+
+        /* ARTICLES */
         article{
             width: 70%;
             margin: auto;
             margin-top: 50px;
             margin-bottom: 50px;
         }
-
         article .btns{
             height: 60px;
             margin: 5px auto;
         }
-
         article .btns input{
             padding: 2px;
             border: none;
@@ -86,14 +77,16 @@
             background-color: var(--color2);
             margin: 5px;
         }
+
+
     </style>
     <title>Aula 07</title>
 </head>
 <body onload="inicializa()">
     <header>
-        <form name="formLogin" method="post">
-            <input type="text" name="txtLogin" placeholder="Login . . ." size="12">
-            <input type="password" name="txtSenha" placeholder="Senha . . ." size="10" minlength="6">
+        <form name="formLogin">
+            <input type="text" name="txtLogin" placeholder="Login . . ." size="12" required/>
+            <input type="password" name="txtSenha" placeholder="Senha . . ." size="10" minlength="6" required/>
             <input type="submit" value="Logar">
         </form>
 
@@ -106,13 +99,15 @@
             </select>
         </div>
     </header>
-
     <article>
         <div class="btns">
             <input type="color" name="txtColor">
         </div>
     </article>
+
     
+    
+
     <script src="index.js"></script>
 </body>
 </html>
